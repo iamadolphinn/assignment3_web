@@ -1,0 +1,102 @@
+:root {
+  --navy: hsl(230, 74%, 22%);
+  --gold: #ffd700;
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--navy), hsl(230, 55%, 32%));
+}
+
+.about-img {
+  max-height: 20rem;
+}
+
+.club-real { background-color: #4b4f9e; }
+.club-milan { background-color: #c8102e; }
+.club-bayern { background-color: #dc052d; }
+.club-liverpool { background-color: #a6192e; }
+
+.stages {
+  background-color: var(--navy);
+  color: white;
+  padding: 2.5rem 1rem;
+}
+
+.stages-title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.stages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.stage-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid var(--gold);
+  border-radius: 0.75rem;
+}
+
+.stage-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--gold);
+}
+
+.stage-card h3 {
+  font-size: 1.2rem;
+}
+
+.stage-card p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .stages {
+    padding: 3.5rem 2rem;
+  }
+
+  .stages-title {
+    font-size: 2rem;
+  }
+
+  .stages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .stages-title {
+    font-size: 2.6rem;
+    text-align: left;
+  }
+
+  .stages-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .stage-card {
+    flex-direction: column;
+    border-left: none;
+    border-top: 4px solid var(--gold);
+  }
+}
